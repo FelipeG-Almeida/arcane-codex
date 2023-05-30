@@ -1,0 +1,27 @@
+:root {
+    --dark-blue: #0A3871
+}
+
+main {
+    background-color: #E5E5E5;
+    padding: 40px;
+}
+
+button {
+    border-radius: 24px;
+    cursor: pointer;
+    padding: 24px;
+    width: 100%;
+}
+
+.button__1 {
+    background-color: var(--dark-blue);
+    border: none;
+    color: #FFF;
+}
+
+.button__2 {
+    background-color: #D8DFE8;
+    border: 1px solid var(--dark-blue);
+    color: var(--dark-blue);
+}
