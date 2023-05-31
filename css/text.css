@@ -1,13 +1,37 @@
 .text {
     display: flex;
     flex-direction: column;
+    min-width: 412px;
 }
 
-.text > img {
-    width: 120px;
+textarea {
+    background-color: var(--light-blue);
+    border: none;
+    color: var(--dark-blue);
+    font-size: 2rem;
+    height: 100%;
+    line-height: 48px;
+    margin-top: 91px;
+    overflow-wrap: break-word;
+    resize: none;
+    width: 100%;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.text > p {
+    background: url("../img/warning.svg") no-repeat left;
+    color: #495057;
+    font-size: 0.75rem;
+    line-height: 18px;
+    margin-bottom: 16px;
+    padding-left: 24px;
 }
 
 .buttons {
     display: flex;
     flex-direction: row;
+    column-gap: 24px;
 }

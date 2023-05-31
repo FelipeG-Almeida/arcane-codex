@@ -1,5 +1,32 @@
 .result {
+    align-items: center;
     background-color: #FFF;
-    min-width: 400px;
     border-radius: 32px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 400px;
+    padding: 32px;
+    text-align: center;
+    width: 25%;
+}
+
+.result > img {
+    width: 80%
+}
+
+.result > p {
+    color: #343A40;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 28px;
+    margin-top: 32px;
+}
+
+.result > small {
+    color: #495057;
+    font-size: 1rem;
+    line-height: 24px;
+    margin-top: 16px;
 }
