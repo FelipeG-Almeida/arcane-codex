@@ -1,0 +1,13 @@
+.text {
+    display: flex;
+    flex-direction: column;
+}
+
+.text > img {
+    width: 120px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+}
