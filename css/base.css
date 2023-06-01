@@ -13,9 +13,9 @@ html, body {
 
 main {
     background-color: #F3F5FC;
-    column-gap: 80px;
+    column-gap: 40px;
     display: flex;
-    height: calc(100% - 178px);
+    height: calc(100% - 154px);
     justify-content: space-between;
     padding: 40px;
 }

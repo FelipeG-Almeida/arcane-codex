@@ -29,16 +29,20 @@
 				></textarea>
 				<p>Apenas letras minúsculas e sem acento.</p>
 				<div class="buttons">
-					<button class="button__1">Criptografar</button>
+					<button onclick="encrypt()" class="button__1">Criptografar</button>
 					<button class="button__2">Descriptografar</button>
 				</div>
 			</div>
 			<div class="result">
-				<img src="./img/nomessage.svg" alt="Sem mensagem" />
-				<p>Nenhuma mensagem encontrada</p>
-				<small
-					>Digite um texto que você deseja criptografar ou
-					descriptografar.</small>
+				<div class="empty">
+					<img src="./img/nomessage.svg" alt="Sem mensagem" />
+					<p>Nenhuma mensagem encontrada</p>
+					<small>Digite um texto que você deseja criptografar ou descriptografar.</small>
+				</div>
+				<div class="data">
+					<p id="output"></p>
+					<button>Copiar</button>
+				</div>
 			</div>
 		</main>
 		<footer>
@@ -50,4 +54,5 @@
 			</div>
 		</footer>
 	</body>
+	<script src="./js/script.js"></script>
 </html>

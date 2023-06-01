@@ -4,7 +4,7 @@ footer {
     display: flex;
     font-family: 'Inter', sans-serif;
     justify-content: space-around;
-    padding: 24px 24px;
+    padding: 12px 24px;
 }
 
 footer > img {
