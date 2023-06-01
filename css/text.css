@@ -32,7 +32,8 @@ textarea:focus {
 }
 
 .buttons {
+    column-gap: 24px;
     display: flex;
     flex-direction: row;
-    column-gap: 24px;
+    margin-bottom: 32px;
 }

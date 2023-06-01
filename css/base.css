@@ -55,3 +55,9 @@ button {
     background-color: #D8DFE8;
     transform: scale(1.025);
 }
+
+.button__3 {
+    background-color: #FFF;
+    border: 1px solid var(--dark-blue);
+    color: var(--dark-blue);
+}
