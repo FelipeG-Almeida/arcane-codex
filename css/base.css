@@ -5,6 +5,7 @@
 
 * {
     font-family: 'Inter', sans-serif;
+    transition: all 0.25s;
 }
 
 html, body {

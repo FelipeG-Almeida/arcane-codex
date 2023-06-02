@@ -12,11 +12,11 @@
     width: 25%;
 }
 
-.empty>img {
+.empty > img {
     width: 80%
 }
 
-.empty>p {
+.empty > p {
     color: #343A40;
     font-size: 1.5rem;
     font-weight: 700;
@@ -24,7 +24,7 @@
     margin-top: 32px;
 }
 
-.empty>small {
+.empty > small {
     color: #495057;
     display: inline-block;
     font-size: 1rem;
@@ -43,41 +43,17 @@
     font-size: 1.5rem;
     height: calc(100% - 72px);
     line-height: 36px;
-}
-
-@keyframes fade-in {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes fade-out {
-    0% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-    }
+    transition: display 0.25s;
+    word-break: break-word;
+    word-wrap: break-word;
 }
 
 .hide {
     display: none;
+    opacity: 0;
 }
 
-.animated {
-    animation-duration: 0.25s;
-    animation-fill-mode: forwards;
-}
-
-.fade-in {
-    animation-name: fade-in;
-}
-
-.fade-out {
-    animation-name: fade-out;
+.copied {
+    background-color: var(--dark-blue);
+    color: #FFF;
 }

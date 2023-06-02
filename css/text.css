@@ -15,6 +15,7 @@ textarea {
     margin-top: 91px;
     overflow-wrap: break-word;
     resize: none;
+    text-transform: lowercase;
     width: 100%;
 }
 
