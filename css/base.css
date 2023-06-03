@@ -13,7 +13,7 @@ html, body {
 }
 
 main {
-    background-color: #F3F5FC;
+    background-color: var(--light-blue);
     column-gap: 40px;
     display: flex;
     height: calc(100% - 154px);
@@ -61,4 +61,25 @@ button {
     background-color: #FFF;
     border: 1px solid var(--dark-blue);
     color: var(--dark-blue);
+}
+
+.button__3:hover {
+    background-color: var(--light-blue);
+    transform: scale(1.025);
+}
+
+@media screen and (max-width: 1023px) {
+    body, main {
+        height: auto;
+    }
+
+    main {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 455px) {
+    main {
+        padding: 16px;
+    }
 }

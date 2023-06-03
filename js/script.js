@@ -23,16 +23,29 @@ input.addEventListener('keypress', function (event) {
 
 function showResult(text) {
 	if (text === '') {
-		data.classList.add('hide');
-		empty.classList.remove('hide');
+		data.style.transition = 'opacity 0.5s';
+		data.style.opacity = 0;
+		setTimeout(() => {
+			data.classList.add('hide');
+			empty.style.transition = 'opacity 0.5s';
+			empty.style.opacity = 1;
+			empty.classList.remove('hide');
+		}, 250);
 	} else {
-		empty.classList.add('hide');
-		data.classList.remove('hide');
+		empty.style.transition = 'opacity 0.5s';
+		empty.style.opacity = 0;
+		setTimeout(() => {
+			empty.classList.add('hide');
+			data.style.transition = 'opacity 0.5s';
+			data.style.opacity = 1;
+			data.classList.remove('hide');
+		}, 250);
 	}
 }
 
 function encrypt() {
 	let plaintext = document.getElementsByTagName('textarea')[0].value;
+	plaintext = plaintext.toLowerCase();
 	showResult(plaintext);
 
 	plaintext = plaintext.replace(/a|e|i|o|u/gi, function (match) {
@@ -44,6 +57,7 @@ function encrypt() {
 
 function decrypt() {
 	let plaintext = document.getElementsByTagName('textarea')[0].value;
+	plaintext = plaintext.toLowerCase();
 	showResult(plaintext);
 
 	const reversedPassword = {};
@@ -68,9 +82,11 @@ function decrypt() {
 async function copy() {
 	await navigator.clipboard.writeText(output.innerHTML);
 	copyButon.innerHTML = 'Mensagem Copiada';
+	copyButon.classList.remove('button__3');
 	copyButon.classList.add('copied');
 	setTimeout(() => {
 		copyButon.innerHTML = 'Copiar';
 		copyButon.classList.remove('copied');
+		copyButon.classList.add('button__3');
 	}, 1500);
 }

@@ -17,10 +17,16 @@ textarea {
     resize: none;
     text-transform: lowercase;
     width: 100%;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 textarea:focus {
     outline: none;
+}
+
+textarea::-webkit-scrollbar {
+    display: none;
 }
 
 .text > p {
@@ -37,4 +43,22 @@ textarea:focus {
     display: flex;
     flex-direction: row;
     margin-bottom: 32px;
+}
+
+@media screen and (max-width: 1023px) {
+    .text {
+        min-width: auto;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 455px) {
+    textarea {
+        margin-top: 45px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        row-gap: 24px;
+    }
 }
