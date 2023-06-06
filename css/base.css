@@ -12,6 +12,13 @@ html, body {
     height: 100%;
 }
 
+body {
+    background-color: var(--light-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 main {
     background-color: var(--light-blue);
     column-gap: 40px;
@@ -69,12 +76,10 @@ button {
 }
 
 @media screen and (max-width: 1023px) {
-    body, main {
-        height: auto;
-    }
 
     main {
         flex-direction: column;
+        height: auto;
     }
 }
 
