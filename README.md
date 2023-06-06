@@ -67,4 +67,6 @@ Por exemplo:
 
 ## Badge do Desafio
 
+![Badge](https://github.com/FelipeG-Almeida/decodificador/assets/73674044/924fdd92-d140-4f1a-948d-0ed6c5fc4716)
+
 ---
