@@ -2,6 +2,8 @@
 
 Este projeto consiste em um decodificador simples que permite criptografar e descriptografar mensagens de texto, um desafio que faz parte do programa Oracle Next Education. O decodificador utiliza uma substituição de letras minúsculas, sem acentos, por palavras-chave.
 
+<p align="center"><img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&amp;logo=html5&amp;logoColor=white" alt="shields"><img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&amp;logo=javascript&amp;logoColor=%23F7DF1E" alt="shields"><img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&amp;logo=css3&amp;logoColor=white" alt="shields"></p>
+
 ## 📑 Instruções de uso
 
 1. Faça o download dos arquivos HTML, CSS e JavaScript fornecidos.
